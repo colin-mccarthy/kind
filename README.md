@@ -32,6 +32,12 @@ kind v0.10.0 go1.15.7 darwin/amd64
 
 https://hub.docker.com/r/rossgeorgiev/kind-node-arm64
 
+
+Official kind node images target only x86 systems. Although kind can be used to generate ARM64 images, 
+it can do so only after building Kubernetes from sources and this is not very practical when using Raspberry Pi for example.
+
+Here's an example of how to start a single node Kubernetes cluster with kind:
+
 ```
 kind create cluster --image rossgeorgiev/kind-node-arm64:v1.20.0
 ```
