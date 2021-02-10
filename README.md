@@ -23,6 +23,8 @@ https://hub.docker.com/r/rossgeorgiev/kind-node-arm64
 kind create cluster --image rossgeorgiev/kind-node-arm64:v1.20.0
 ```
 
+## context command
+
 ```
 kubectl cluster-info --context kind-kind
 ```
