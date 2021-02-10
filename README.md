@@ -2,14 +2,22 @@
 
 https://kind.sigs.k8s.io/docs/user/quick-start/#installation
 
+Install Go
 ```
 brew install golang
 ```
 
+Install Kind
+```
+GO111MODULE="on" go get sigs.k8s.io/kind@v0.10.0 && kind create cluster
+```
+
+Add directory to your path
 ```
 export PATH=$PATH:/Users/colinmccarthy/go/bin
 ```
 
+Test install with version command
 ```
 colinmccarthy@Colins-MacBook-Pro work % kind version
 kind v0.10.0 go1.15.7 darwin/amd64
