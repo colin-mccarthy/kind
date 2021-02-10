@@ -15,3 +15,11 @@ colinmccarthy@Colins-MacBook-Pro work % kind version
 kind v0.10.0 go1.15.7 darwin/amd64
 ```
 
+## M1 Mac Support
+
+https://hub.docker.com/r/rossgeorgiev/kind-node-arm64
+
+```
+kind create cluster --image rossgeorgiev/kind-node-arm64:v1.20.0
+```
+
