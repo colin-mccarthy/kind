@@ -33,10 +33,8 @@ kubectl cluster-info --context kind-kind
 ## delete cluster
 
 ```
-
 kind get clusters
 
-Kind delete cluster
-
+kind delete cluster
 ```
 
