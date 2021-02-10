@@ -14,6 +14,11 @@ GO111MODULE="on" go get sigs.k8s.io/kind@v0.10.0 && kind create cluster
 
 Add directory to your path
 ```
+echo $(go env GOPATH)
+```
+
+dont forget to add /bin
+```
 export PATH=$PATH:/Users/colinmccarthy/go/bin
 ```
 
