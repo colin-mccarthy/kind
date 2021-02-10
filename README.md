@@ -29,3 +29,14 @@ kind create cluster --image rossgeorgiev/kind-node-arm64:v1.20.0
 kubectl cluster-info --context kind-kind
 ```
 
+
+## delete cluster
+
+```
+
+kind get clusters
+
+Kind delete cluster
+
+```
+
