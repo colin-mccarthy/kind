@@ -13,11 +13,12 @@ GO111MODULE="on" go get sigs.k8s.io/kind@v0.10.0 && kind create cluster
 ```
 
 Add directory to your path
+
+go get will put kind in $(go env GOPATH)/bin. You may need to add that directory to your $PATH as 
+shown here if you encounter the error kind: command not found after installation.
 ```
 echo $(go env GOPATH)
 ```
-
-dont forget to add /bin
 ```
 export PATH=$PATH:/Users/colinmccarthy/go/bin
 ```
