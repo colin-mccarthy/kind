@@ -1,6 +1,10 @@
 # kind
 
-Install XCODE from the App store.
+Install XCODE from the App store
+
+Install HomeBrew
+
+ ## Install Kind
 
 
  `brew install kind`
