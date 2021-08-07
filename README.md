@@ -42,10 +42,7 @@ kubectl cluster-info --context kind-kind
 
 Thanks for using kind! 😊
 
-```
-
-```
- kubectl cluster-info --context kind-kind
+kubectl cluster-info --context kind-kind
  
 Kubernetes master is running at https://127.0.0.1:56926
 CoreDNS is running at https://127.0.0.1:56926/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
