@@ -73,15 +73,14 @@ it can do so only after building Kubernetes from sources and this is not very pr
 
 Here's an example of how to start a single node Kubernetes cluster with kind:
 
-```
-kind create cluster --image rossgeorgiev/kind-node-arm64:v1.20.0
-```
+`kind create cluster --image rossgeorgiev/kind-node-arm64:v1.20.0`
+
 
 ## context command
 
-```
-kubectl cluster-info --context kind-kind
-```
+
+`kubectl cluster-info --context kind-kind`
+
 
 
 ## delete cluster
