@@ -51,7 +51,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
 `k get nodes`
- 
+``` 
 NAME                 STATUS   ROLES                  AGE   VERSION
 kind-control-plane   Ready    control-plane,master   49s   v1.21.1
 
