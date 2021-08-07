@@ -1,33 +1,66 @@
 # kind
 
-https://kind.sigs.k8s.io/docs/user/quick-start/#installation
+Install XCODE from the App store.
 
-Install Go
 ```
-brew install golang
-```
-
-Install Kind
-```
-GO111MODULE="on" go get sigs.k8s.io/kind@v0.10.0 && kind create cluster
-```
-
-Add directory to your path
-
-go get will put kind in $(go env GOPATH)/bin. You may need to add that directory to your $PATH as 
-shown here if you encounter the error kind: command not found after installation.
-```
-echo $(go env GOPATH)
-```
-```
-export PATH=$PATH:/Users/colinmccarthy/go/bin
+ ~ % brew install kind
+ 
+==> Downloading https://ghcr.io/v2/homebrew/core/kind/manifests/0.11.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/kind/blobs/sha256:116a1749c6aee8ad7282caf3a3d2616d11e6193c839c8797cde045cddd0e1138
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:116a1749c6aee8ad7282caf3a3d2616d11e6193c839c8797cde04
+######################################################################## 100.0%
+==> Pouring kind--0.11.1.big_sur.bottle.tar.gz
+==> Caveats
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/kind/0.11.1: 8 files, 8.4MB
 ```
 
-Test install with version command
 ```
-colinmccarthy@Colins-MacBook-Pro work % kind version
-kind v0.10.0 go1.15.7 darwin/amd64
+
+ ~ % kind version
+ 
+kind v0.11.1 go1.16.4 darwin/amd64
 ```
+
+```
+kind create cluster
+
+Creating cluster "kind" ...
+ ✓ Ensuring node image (kindest/node:v1.21.1) 🖼 
+ ✓ Preparing nodes 📦  
+ ✓ Writing configuration 📜 
+ ✓ Starting control-plane 🕹️ 
+ ✓ Installing CNI 🔌 
+ ✓ Installing StorageClass 💾 
+Set kubectl context to "kind-kind"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-kind
+
+Thanks for using kind! 😊
+
+```
+
+```
+ kubectl cluster-info --context kind-kind
+ 
+Kubernetes master is running at https://127.0.0.1:56926
+CoreDNS is running at https://127.0.0.1:56926/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+```
+```
+ k get nodes
+ 
+NAME                 STATUS   ROLES                  AGE   VERSION
+kind-control-plane   Ready    control-plane,master   49s   v1.21.1
+
+```
+
+
 
 ## M1 Mac Support
 
