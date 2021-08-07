@@ -1,10 +1,12 @@
 # KinD (Kubernetes in Docker)
 
+## Pre Flight
+
 Install XCODE from the App store
 
 Install HomeBrew
 
- ## Install Kind with Brew
+ ## Install KinD with Brew
 
 
  `brew install kind`
