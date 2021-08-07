@@ -21,7 +21,7 @@ zsh completions have been installed to:
 
 
 `kind version`
-ç 
+```
 kind v0.11.1 go1.16.4 darwin/amd64
 ```
 
