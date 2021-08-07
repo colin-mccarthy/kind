@@ -1,4 +1,4 @@
-# kind
+# KinD (Kubernetes in Docker)
 
 Install XCODE from the App store
 
