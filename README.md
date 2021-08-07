@@ -4,7 +4,7 @@ Install XCODE from the App store
 
 Install HomeBrew
 
- ## Install Kind
+ ## Install Kind with Brew
 
 
  `brew install kind`
