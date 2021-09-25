@@ -31,6 +31,7 @@ zsh completions have been installed to:
 kind v0.11.1 go1.16.4 darwin/amd64
 ```
 
+## Create Cluster Command
 
 `kind create cluster`
 ```
@@ -61,6 +62,14 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 NAME                 STATUS   ROLES                  AGE   VERSION
 kind-control-plane   Ready    control-plane,master   49s   v1.21.1
 
+```
+
+## Create Cluster from YAML
+
+To use a yaml, place the contents in a file <config.yaml> and then run from the same directory.
+
+```
+kind create cluster --config=config.yaml
 ```
 
 
